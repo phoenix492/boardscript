@@ -29,11 +29,4 @@ Upon thinking, it seems the only difference between these 3 is WHEN the board
 or rules are loaded. As such, it may be worth simply launching the program in 
 3 different modes, "Game Mode," "Engine Mode," and "Function Mode" respectively
 for the above functions of B. Polymorphism perhaps?
-## Data Structure
-There are three main data structures that Boardscript should operate on.
-These are the Move, the Boardstate, and the Ruleset.
 
-Move 
-- This can genuinely be a simple string. Move notation from chess provides the
-inspiration. "Ke2" is a direction to move the piece designated "K" to square 
-"e2."
