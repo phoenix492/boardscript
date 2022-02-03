@@ -1,4 +1,5 @@
 # Principles
+
 ## Modal
 Boardscript should have 3 modes, defined as follows.
 Let B be the state of a board, M be a move to be applied to that board, and R 
@@ -22,6 +23,7 @@ stateless I/O function.
 Boardscript _may_ have a fourth mode with a non-boardstate output, M(R, B) 
 where it calculates and outputs every legal move in boardstate B according to 
 R rules. I'll _creatively_ refer to it as "Calculate Mode."
+
 ## Data Structure
 There are three main data structures that Boardscript should operate on.
 These are the Move, the Boardstate, and the Ruleset. Deliberation on the "Move"
@@ -33,7 +35,10 @@ Each Data Structure presents its own unique challeneges.
 - Boardstates provide simple i/o info about the board, but how does boardscript 
 apply M transformation to the board with R ruleset. 
 - Rulesets are the primary source of customization and complexity in the
-project. 
+project. How does boardscript take the user facing files, and parse them into 
+the program. Should these files be compiled into a more machine friendly format
+(JSON?) At what point would the user prefer editing these awful JSON files 
+directly? 
 
 ### Move 
 - This can be a simple string. Move notation from chess provides the 
