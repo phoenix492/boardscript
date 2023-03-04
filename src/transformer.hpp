@@ -6,5 +6,5 @@ class MoveAgent {
 	public:
 		MoveAgent(int);
 		MoveAgent();
-		int transform();
+		int transform(int);
 };
