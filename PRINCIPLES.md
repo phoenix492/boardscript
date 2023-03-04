@@ -50,10 +50,10 @@ commonly designated with "Ch" instead of just a single letter, potentially
 muddying where "piece" ends and "square" ends.
 - There are options. The safest way is to require moves to be formated as 
 (Piece)-[Actions]-(Square). For example, "Knight to e5" in chess notation would
-be "Ne5" while in this notation it would be "Knight-m-e5."
+be "Ne5" while in this notation it would be "N-m-e5."
 - A fun way to try for compatability with things like Stockfish and other Chess 
 standards would be to create a translation layer between the two that converts 
-something like "O-O-O" into "King-c-g1"
+something like "O-O-O" into "K-c-g1"
 - Actions require their own internal data structure defined below.
 
 ### Actions
